@@ -30,7 +30,7 @@ const Login = () => {
             
             <button className="buttonLogin" onClick={handleLogin}>Войти</button>
             
-            <Link to="/registration" className="link__auth">Зарегестрироваться</Link>
+            <Link to="/registration" className="link__auth">Зарегистрироваться</Link>
 
           </div>
           
