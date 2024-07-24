@@ -34,10 +34,10 @@ const Registration = () => {
           <input value={name} onChange={(event) => setName(event.target.value)} setValue={setName} type="text" className="input" placeholder="Имя"/>
         </div>
         <div className="input__div"><img src={namePNG} alt="person" className="phonePNG"/>
-          <input value={surname} onChange={(event) => setSurname(event.target.value)} setValue={setSurname} type="text" className="input" placeholder="Фамилия"/>
+          <input value={surname} onChange={(event) => setSurname(event.target.value)} setValue={setSurname} type="text" className="input" placeholder="Личный код"/>
         </div>
         <div className="input__div"><img src={phonePNG} alt="Phone" className="phonePNG"/>
-          <input value={phone} onChange={(event) => setPhone(event.target.value)} setValue={setPhone} type="number" className="input" placeholder="Номер телефона"/>
+          <input value={phone} onChange={(event) => setPhone(event.target.value)} setValue={setPhone} type="number" className="input" placeholder="8............"/>
         </div>
         <div className="input__div"><img src={passwdPNG} alt="Password" className="phonePNG"/>
           <input value={password} onChange={(event) => setPassword(event.target.value)} setValue={setPassword} type="password" className="input" placeholder="Придумайте пароль"/>
@@ -46,7 +46,7 @@ const Registration = () => {
           <input type="password" className="input" placeholder="Повторите пароль"/>
         </div> */}
         
-        <button className="buttonLogin" onClick={handleRegistration}>Зарегестрироваться</button>
+        <button className="buttonLogin" onClick={handleRegistration}>Зарегистрироваться</button>
         <Link to="/login" className="link__auth">Войти</Link>
       </div>
       
