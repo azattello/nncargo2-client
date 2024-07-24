@@ -168,7 +168,8 @@ const UserList = () => {
         <table className="table">
           <thead>
             <tr>
-              <th>ФИО</th>
+              <th>Имя</th>
+              <th>Код</th>
               <th>Номер</th>
               <th>Дата регистрации</th>
               <th>В пути</th>
@@ -181,7 +182,8 @@ const UserList = () => {
           <tbody>
             {users.map((user, index) => (
               <tr key={index}>
-                <td>{user.name + ' ' + user.surname}</td>
+                <td>{user.name}</td>
+                <td>{user.surname}</td>
                 <td>{user.phone}</td>
                 <td>{formatDate(user.createdAt)}</td>
                 <td>{user.bookmarkCount}</td>
